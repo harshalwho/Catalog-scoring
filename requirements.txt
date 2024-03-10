@@ -10,3 +10,4 @@ transformers
 scipy
 numpy
 requests
+PIL
