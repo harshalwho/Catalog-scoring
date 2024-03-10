@@ -1,8 +1,2 @@
 streamlit
 pandas
-torch
-numpy
-requests
-sklearn
-sentence_transformers
-transformers
