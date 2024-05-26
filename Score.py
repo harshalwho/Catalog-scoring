@@ -366,8 +366,9 @@ if uploaded_file is not None:
           if 'Image Score' in df.columns:
             df['Total Score'] += df['Image Score']
 
-          catalogue_score = df['Total Score'].mean()
-
+          catalogue_score1 = df['Total Score'].mean()
+          catalogue_score = round(catalogue_score1, 3)
+          
         # Save results    
         today = datetime.date.today().strftime('%Y-%m-%d')
         results_df = pd.DataFrame({'Seller Name': [seller_name], 
