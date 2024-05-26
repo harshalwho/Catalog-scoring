@@ -327,15 +327,6 @@ if uploaded_file is not None:
               y = np.array([1 if 'good' in col else 0 for col in image_cols])
               y = np.expand_dims(y,1)
 
-              from sklearn.svm import SVC
-              clf = SVC(probability=True)
-              clf.fit(X, y)
-
-              probs = clf.predict_proba(X)
-
-              image_scores = np.array([p[1] for p in probs])
-
-              df['Image Score'] = image_scores.mean()
 
             else:
               print("No valid images found")
