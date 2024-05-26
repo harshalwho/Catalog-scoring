@@ -6,4 +6,3 @@ sentence_transformers
 scipy
 torchvision
 numpy
-sklearn
