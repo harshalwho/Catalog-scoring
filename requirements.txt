@@ -1,2 +1,9 @@
 streamlit
 pandas
+torch
+transformers
+sentence_transformers
+scipy
+torchvision
+numpy
+sklearn
